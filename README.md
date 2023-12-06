@@ -19,17 +19,20 @@ This project is a solution to the developer challenge provided by [Recruiter/Com
 ## Project Structure
 
 The project follows the structure below:
-/ # Root directory
-|-- src/ # Source code directory
-| |-- App/ # Main application files
-| |-- Scrape.php # Main scraping class
-| |-- Product.php # Product class
-| |-- ScrapeHelper.php # Helper class for scraping
-| |-- Utilities.php # Utility functions
-|-- vendor/ # Composer dependencies
-|-- output.json # Output file for scraped data
-|-- composer.json # Composer configuration file
-|-- README.md # Project documentation
+
+    ```bash
+    / # Root directory
+    |-- src/ # Source code directory
+    | |-- App/ # Main application files
+    | |-- Scrape.php # Main scraping class
+    | |-- Product.php # Product class
+    | |-- ScrapeHelper.php # Helper class for scraping
+    | |-- Utilities.php # Utility functions
+    |-- vendor/ # Composer dependencies
+    |-- output.json # Output file for scraped data
+    |-- composer.json # Composer configuration file
+    |-- README.md # Project documentation
+    ```
 
 ## Dependencies
 
@@ -44,8 +47,9 @@ The project follows the structure below:
    git clone https://github.com/Ishoshot/magpie-developer-challenge
 
    composer install
-
    ```
+
+````
 
 ## Usage
 
@@ -53,3 +57,4 @@ The project follows the structure below:
 php src/Scrape.php
 
 ```
+````
