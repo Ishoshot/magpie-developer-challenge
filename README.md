@@ -20,7 +20,6 @@ This project is a solution to the developer challenge provided by [Recruiter/Com
 
 The project follows the structure below:
 
-    ```bash
     / # Root directory
     |-- src/ # Source code directory
     | |-- App/ # Main application files
@@ -32,7 +31,6 @@ The project follows the structure below:
     |-- output.json # Output file for scraped data
     |-- composer.json # Composer configuration file
     |-- README.md # Project documentation
-    ```
 
 ## Dependencies
 
