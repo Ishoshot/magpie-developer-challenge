@@ -1,58 +1,55 @@
-## Magpie PHP Developer Challenge
+# Developer Challenge - Smartphone Scraper
 
-Your task is to gather data about the products listed on https://www.magpiehq.com/developer-challenge/smartphones
+This project is a solution to the developer challenge provided by [Recruiter/Company Name]. The goal of the challenge was to create a web scraper for extracting smartphone product information from a specific website and then store the data in a JSON file.
 
-The final output of your script should be an array of objects similar to the example below:
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Requirements
+
+- PHP >= [Your PHP Version]
+- Composer (for dependency management)
+
+## Project Structure
+
+The project follows the structure below:
+/ # Root directory
+|-- src/ # Source code directory
+| |-- App/ # Main application files
+| |-- Scrape.php # Main scraping class
+| |-- Product.php # Product class
+| |-- ScrapeHelper.php # Helper class for scraping
+| |-- Utilities.php # Utility functions
+|-- vendor/ # Composer dependencies
+|-- output.json # Output file for scraped data
+|-- composer.json # Composer configuration file
+|-- README.md # Project documentation
+
+## Dependencies
+
+- [Symfony DomCrawler](https://symfony.com/doc/current/components/dom_crawler.html): Used for web scraping.
+- [Guzzle HTTP Client](https://docs.guzzlephp.org/en/stable/): Used for making HTTP requests.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Ishoshot/magpie-developer-challenge
+
+   composer install
+
+   ```
+
+## Usage
+
+```bash
+php src/Scrape.php
 
 ```
-{
-    "title": "iPhone 11 Pro 64GB",
-    "price": 123.45,
-    "imageUrl": "https://example.com/image.png",
-    "capacityMB": 64000,
-    "colour": "red",
-    "availabilityText": "In Stock",
-    "isAvailable": true,
-    "shippingText": "Delivered from 25th March",
-    "shippingDate": "2021-03-25"
-}
-
-```
-
-You should use this repository as a starter template.
-
-You can refer to the [Symfony DomCrawler](https://symfony.com/doc/current/components/dom_crawler.html) documentation for a nice way to capture the data you need.
-
-Hint: the `Symfony\Component\DomCrawler\Crawler` class,  and its `filter()` method, are your friends.
-
-You can share your code with us by email, or through a service like GitHub.
-
-Please also send us your `output.json`.
-
-### Notes
-* Please de-dupe your data. We don’t want to see the same product twice, even if it’s listed twice on the website.
-* Make sure that all product variants are captured. Each colour variant should be treated as a separate product.
-* Device capacity should be captured in MB for all products (not GB)
-* The final output should be an array of products, outputted to output.json
-* Don’t forget the pagination!
-* You will be assessed both on successfully generating the correct output data in output.json, and also on the quality of your code.
-
-### Useful Resources
-* https://symfony.com/doc/current/components/dom_crawler.html
-* https://symfony.com/doc/current/components/css_selector.html
-* https://github.com/jupeter/clean-code-php
-
-### Requirements
-
-* PHP 7.4+
-* Composer
-
-### Setup
-
-```
-git clone git@github.com:stickeeuk/magpie-scrape-challenge.git
-cd magpie-scrape-challenge
-composer install
-```
-
-To run the scrape you can use `php src/Scrape.php`
