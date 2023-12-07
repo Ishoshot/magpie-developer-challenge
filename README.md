@@ -13,7 +13,7 @@ This project is a solution to the developer challenge provided by [Recruiter/Com
 
 ## Requirements
 
-- PHP >= [Your PHP Version]
+- PHP >= 8
 - Composer (for dependency management)
 
 ## Project Structure
@@ -47,12 +47,9 @@ The project follows the structure below:
    composer install
    ```
 
-````
-
 ## Usage
-
-```bash
-php src/Scrape.php
-
-```
-````
+    
+    ```bash
+    php src/Scrape.php
+    
+    ```
